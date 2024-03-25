@@ -35,11 +35,39 @@
             </p>
             <p class="p-summary">This blog post looks at the various uses of microformats.</p>
             <div class="e-content">
+                <figure>
+                    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/microformats">Microformats are
+                        standards used to embed semantics and structured data in HTML, and provide
+                        an API to be used by social web applications, search engines, aggregators, and other tools.
+                        These
+                        minimal patterns of HTML are used for marking up entities that range from fundamental to
+                        domain-specific information, such as people, organizations, events, and locations.</blockquote>
+                    <figcaption>Introduction from <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/microformats">MDN Microformats</a>
+                        MDN</figcaption>
+                </figure>
+
                 <p>Blogs actually have very spesific kinds of microformating, because they have a very specific function
                     on the web. Blogs are dated posts, that follow sequentially. Each post can stand allone, but also
                     forms part of a larger collective.</p>
                 <p>Blogs posts are articles. They have an author, a publication date, a summary, and the full content.
                     Each is marked up seperatly, as I have done here.</p>
+                <p>For a blog post, your root class for the article is an <code>&lt;article class="h-entry"&gt;</code>
+                </p>
+                <p>This then has a heading marked <code>&lt;h* class="p-name"&gt;</code></p>
+
+                <p>It has a publication date marked <code>&lt;time class="dt-published" datetime="2024-03-20"&gt;</code>
+                </p>
+                <p>An author, either as a <code>&lt;p&gt;</code> or a url, or ideally an <code>h-card</code> marked
+                    <code>&lt;class="p-author"&gt;</code>
+                </p>
+                <p>A paragraph summary marked <code>&lt;p class="p-summary"&gt;</code></p>
+                <p>And finaly to content itself, which is in a <code>&ltdiv class="e-content"&gt;</code></p>
+                <p>The <a href="/portfolio/profile.html">profile</a> page shows how to set up an
+                    <code>&lt;h-card&gt;</code></p>
+                <p>You can find more examples on MDN <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/microformats#microformats_prefixes">here</a>.
+                </p>
                 <p>Later on, you may want to explore h-streams as well, and combine it with the h-entry.</p>
             </div>
 
