@@ -1,5 +1,5 @@
 const menuItems = [
-    { name: "Home", href: "index.html" },
+    { name: "Home", href: "/index.html" },
     { name: "Blog", href: "/blogs/index.html" },
     { name: "Essays", href: "/essays/index.html" },
     { name: "Portfolio", href: "/portfolio/index.html" },
