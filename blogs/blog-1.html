@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="demo blog 1, discussing semantic markup">
+    <meta name="author" content="Hanli Geyser">
+    <title>Blog 1 - Semantic Markup</title>
+    <script type="module" src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        2024 WSOA3028A
+        <nav>
+            
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Blog 1 - Semantic Markup</h1>
+            <h2>Markup</h2>
+            <p>In this blog post I am using various html elements to creat meaning. The only thing I am interested in is
+                what the markup <em>does</em>, not what it <em>looks</em> like. This sentence right here is a bad
+                example. I want the word <em>does</em> to have more impact, so I have used emphasis to make it appear
+                italisised. While this is changing what it looks like, I want it to be emphasised regardless of what I
+                do with the css later on. But this is not a normal use case. Things that are of far more concern are
+                headings, paragraphs, articles, asides, sections, and so forth.</p>
+            <h2>Headings</h2>
+            <p>You will see that I have the entire blog post wrapped in an article tag. This is a good way to use the
+                article element. Having the full post as an article keeps it together and
+                shows that it can stand alone.</p>
+            <p>There is only one heading 1 on the page. It corresponds to the title in the head, which will increase
+                it's search engine visibility. Below it, I can nest various levels of heading 2, 3, 4, 5, and 6. This is
+                how I structure the content on the page.</p>
+            <h2>Referencing and quotes</h2>
+            <p>You can use <code>&lt;figure&gt;</code> and <code>&lt;blockquote&gt;</code> with the
+                <code>&ltcite&gt;</code> element to add references to your text. For example:
+            </p>
+            <figure>
+                <blockquote>
+                    The cite HTML element is used to mark up the title of a cited creative work. The reference may be
+                    in an abbreviated form according to context-appropriate conventions related to citation
+                    metadata.
+                </blockquote>
+                <figcaption> An example of referencing semantically, taken from <cite> <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">MDN The Citation
+                            Element</a></cite></figcaption>
+            </figure>
+            <p>This uses the figure element to hold the quote (in a block format), together with the citation element
+                (put in the figure caption) <q>bla bla bla</q> which links it back to where it was found on the web.</p>
+            <p>In line quotes can be created with the <code>&lt;q&gt;</code> element.</p>
+            <h2>Images</h2>
+            <p>I can also add images to the post. I'm going to put blog images in an image folder in the blogs folder,
+                because later on, I may have so many that I can't keep track.</p>
+            <img src="blog-images/blog-image.jpg" alt="Computer screen displaying html reading Authenication Failed"
+                title="Computer Screen">
+            <p>If you hover over the image, you will see a tooltip that shows the image title, that was added to the
+                image element along with appropriate alt text.</p>
+
+            <p>A list of HTML elements can be found <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">here</a></p>
+        </article>
+        <p>
+            <a href="index.html">Back to Blog</a>
+        </p>
+    </main>
+    <footer>
+        <p>brought to you by demo 2024</p>
+    </footer>
+</body>
+
+</html>
