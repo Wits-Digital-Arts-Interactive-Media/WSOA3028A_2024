@@ -2,10 +2,13 @@ const root = "/WSOA3028A_2024"
 
 const menuItems = [
     { name: "Home", href: root + "/index.html" },
-    { name: "Blog", href: root + "/blogs/index.html" },
-    { name: "Essays", href: root + "/essays/index.html" },
-    { name: "Portfolio", href: root + "/portfolio/index.html" },
-    { name: "Design", href: root + "/design/index.html" },
+    //Type Coercion - it is taking a const, adding it to a string and making it the string it expects
+    { name: "Blog", href: `${root}/blogs/index.html` },
+    //back-tick syntax (template strings) `...` - allows the use of whitespace, ", ', interpolation, and substitution
+    //allows for string interpolation ${ } - automatically replaces variables and expressions with real values
+    { name: "Essays", href: `${root}/essays/index.html` },
+    { name: "Portfolio", href: `${root}/portfolio/index.html` },
+    { name: "Design", href: `${root}/design/index.html` },
 ]
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
